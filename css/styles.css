@@ -68,12 +68,12 @@ section .title::before{
 }
 section .title::after{
     position: absolute;
-    bottom: -8px;
+    bottom: -50px;
     left: 50%;
     font-size: 20px;
     color: #009B4D;
     padding: 0 5px;
-    background: #fff;
+    background: none;
     transform: translateX(-50%);
 }
 @media screen and (max-width: 768px) {
@@ -142,7 +142,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: #FFCC00;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -447,6 +447,7 @@ section .title::after{
 }
 
 /* contact section styling */
+
 .contact .title::after{
     content: "Ping Me, Let’s Create Magic Together!";
 }
@@ -474,7 +475,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #009B4D;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -533,7 +534,7 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: #006400;
+  background: #009B4D;
   border: 2px solid whitesmoke;
   transition: all 0.3s ease;
 }
