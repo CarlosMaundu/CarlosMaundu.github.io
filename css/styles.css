@@ -59,22 +59,23 @@ section .title{
 section .title::before{
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: -10px; /* Adjust this value to move the line closer or farther from the title */
     left: 50%;
     width: 180px;
     height: 3px;
     background: #111;
     transform: translateX(-50%);
+    z-index: 1;
 }
 section .title::after{
-    position: absolute;
-    bottom: -50px;
-    left: 50%;
+    display: block;
+    margin-top: 15px; /* Adjust this value to create space between the line and the subtitle */
     font-size: 20px;
     color: #009B4D;
     padding: 0 5px;
+    text-align: center;
     background: none;
-    transform: translateX(-50%);
+    transform: none;
 }
 @media screen and (max-width: 768px) {
     section .title::after {
@@ -371,10 +372,10 @@ section .title::after{
     width: 95%;
 }
 .skills-content .right .css::before{
-    width: 90%;
+    width: 60%;
 }
 .skills-content .right .js::before{
-    width: 80%;
+    width: 70%;
 }
 .skills-content .right .php::before{
     width: 90%;
