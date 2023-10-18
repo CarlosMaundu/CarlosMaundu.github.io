@@ -279,7 +279,7 @@ section .title::after{
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: #FFFFF0;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -307,6 +307,7 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: #009B4D;
 }
 
 /* skills section styling */
@@ -389,7 +390,7 @@ section .title::after{
     content: "Mind Bytes: Where I Store My 2 Cents";
 }
 .blog .carousel .card{
-    background: #222;
+    background: #FFFFF0;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -413,6 +414,7 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: #009B4D;
 }
 .blog .carousel .card img{
     height: 150px;
