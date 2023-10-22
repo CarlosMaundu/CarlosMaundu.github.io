@@ -1,18 +1,26 @@
 $(document).ready(function(){
-    $(window).scroll(function(){
-        // sticky navbar on scroll script
-        if(this.scrollY > 20){
+    // Function to handle sticky navbar on scroll
+    function handleStickyNavbar() {
+        if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
-        }else{
+        } else {
             $('.navbar').removeClass("sticky");
         }
-        
-        // scroll-up button show/hide script
-        if(this.scrollY > 500){
+    }
+
+    // Function to handle scroll-up button show/hide
+    function handleScrollUpButton() {
+        if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
-        }else{
+        } else {
             $('.scroll-up-btn').removeClass("show");
         }
+    }
+
+    // Scroll Event Listener
+    $(window).scroll(function() {
+        handleStickyNavbar();
+        handleScrollUpButton();
     });
 
     // slide-up script
