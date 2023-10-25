@@ -1,6 +1,6 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -687,3 +687,119 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+/*comment: This is the CSS for the social media buttons*/
+/* Path: css/styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.wrapper .button {
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+    cursor: pointer;
+    background: white;
+    transition: width 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.wrapper .button .label {
+    display: none;
+    line-height: 50px;
+    padding-left: 0px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.wrapper .button:hover {
+    width: auto;
+    padding-right: 15px;
+}
+
+.wrapper .button:hover .label {
+    display: inline-block;
+}
+
+.wrapper .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    z-index: -1;
+    transition: all 0.3s ease-out;
+}
+
+/* Default icon colors and hover text colors */
+.wrapper .button:nth-child(1) .icon i, 
+.wrapper .button:nth-child(1):hover .label {
+    color: #333;
+}
+
+.wrapper .button:nth-child(2) .icon i, 
+.wrapper .button:nth-child(2):hover .label {
+    color: #0077B5;
+}
+
+.wrapper .button:nth-child(3) .icon i, 
+.wrapper .button:nth-child(3):hover .label {
+    color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(4) .icon i, 
+.wrapper .button:nth-child(4):hover .label {
+    color: #12100E;
+}
+
+/* Hover background colors */
+.wrapper .button:nth-child(1):hover::before {
+    background: #333;
+}
+
+.wrapper .button:nth-child(2):hover::before {
+    background: #0077B5;
+}
+
+.wrapper .button:nth-child(3):hover::before {
+    background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(4):hover::before {
+    background: #12100E;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button .icon i {
+    font-size: 19px;
+    transition: all 0.3s ease-out;
+}
+
+
+

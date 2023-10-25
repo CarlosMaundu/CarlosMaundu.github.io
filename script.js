@@ -56,6 +56,14 @@ $(document).ready(function(){
         loop: true
     });
 
+    //JavaScript to update the year automatically
+    function addCopyright(){
+        var currentYear = new Date().getFullYear();
+        var element = document.getElementById("copyright");
+        element.innerHTML =  currentYear;
+    }
+    addCopyright();
+
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
