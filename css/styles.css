@@ -690,6 +690,7 @@ footer span a:hover{
 
 /*comment: This is the CSS for the social media buttons*/
 /* Path: css/styles.css */
+
 * {
     margin: 0;
     padding: 0;
@@ -703,7 +704,7 @@ footer span a:hover{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .wrapper .button {
@@ -719,6 +720,17 @@ footer span a:hover{
     transition: width 0.3s ease-out, padding 0.3s ease-out;
 }
 
+/* Added styles for the wrapper */
+.wrapper .button .social-media-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* Add some spacing between the icon and the label */
+.wrapper .button .social-media-wrapper span {
+    margin-left: 5px;
+}
+
 .wrapper .button .label {
     display: none;
     line-height: 50px;
@@ -730,6 +742,7 @@ footer span a:hover{
 .wrapper .button:hover {
     width: auto;
     padding-right: 15px;
+    background: #FFFFF0;
 }
 
 .wrapper .button:hover .label {
@@ -749,23 +762,23 @@ footer span a:hover{
 }
 
 /* Default icon colors and hover text colors */
-.wrapper .button:nth-child(1) .icon i, 
-.wrapper .button:nth-child(1):hover .label {
+.wrapper .button:nth-child(1) .social-media-wrapper i, 
+.wrapper .button:nth-child(1) .social-media-wrapper span {
     color: #333;
 }
 
-.wrapper .button:nth-child(2) .icon i, 
-.wrapper .button:nth-child(2):hover .label {
+.wrapper .button:nth-child(2) .social-media-wrapper i, 
+.wrapper .button:nth-child(2) .social-media-wrapper span {
     color: #0077B5;
 }
 
-.wrapper .button:nth-child(3) .icon i, 
-.wrapper .button:nth-child(3):hover .label {
+.wrapper .button:nth-child(3) .social-media-wrapper i, 
+.wrapper .button:nth-child(3) .social-media-wrapper span {
     color: #1DA1F2;
 }
 
-.wrapper .button:nth-child(4) .icon i, 
-.wrapper .button:nth-child(4):hover .label {
+.wrapper .button:nth-child(4) .social-media-wrapper i, 
+.wrapper .button:nth-child(4) .social-media-wrapper span {
     color: #12100E;
 }
 
@@ -800,6 +813,5 @@ footer span a:hover{
     font-size: 19px;
     transition: all 0.3s ease-out;
 }
-
 
 
