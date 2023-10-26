@@ -286,6 +286,12 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.services .serv-content .card p {
+    color: #111;
+}
+.services .serv-content .card:hover p {
+    color: #fff;
+}
 .services .serv-content .card:hover{
     background: #FFCC00;
 }
@@ -416,6 +422,24 @@ section .title::after{
     margin: 10px 0 7px 0;
     color: #009B4D;
 }
+.blog .carousel .card p a {
+    color: blue;
+    position: relative;
+}
+.blog .carousel .card p a::after {
+    content: "\f0c1";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.blog .carousel .card:hover p a {
+    color: #FFFFF0;
+    font-weight: bold;
+}
+
 .blog .carousel .card img{
     height: 150px;
     width: 150px;
@@ -689,7 +713,6 @@ footer span a:hover{
 }
 
 /*comment: This is the CSS for the social media buttons*/
-/* Path: css/styles.css */
 
 * {
     margin: 0;
