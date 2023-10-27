@@ -35,10 +35,18 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "smooth");
     });
 
+   
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
+        if ($('.navbar .menu').hasClass("active")) {
+            // If menu is active, adjust styles for smaller icons
+            $('.nav-item .icon').css("font-size", "12px");
+        } else {
+            // Reset to original size when menu is not active
+            $('.nav-item .icon').css("font-size", "14px");
+        }
     });
 
     // typing text animation script

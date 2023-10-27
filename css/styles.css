@@ -120,9 +120,9 @@ section .title::after{
 .navbar .menu li a{
     display: block;
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
-    margin-left: 25px;
+    margin-left: 0%;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
@@ -131,7 +131,71 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: #FFCC00;
 }
+/* New navbar styles */
+.nav-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);  
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);  /* Reduced shadow */
+    color: #fff;
+    padding: 5px 10px;  
+    border-radius: 9px;  
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.5s;  /* Added transform transition */
+    margin: 0 3px;  
+}
 
+.nav-item::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.25) 0%, transparent 50%);
+    transform: rotate(10deg);
+    pointer-events: none;
+}
+
+.nav-item:hover {
+    background-color: #009B4D;
+    transform: translateY(-5px);  
+}
+
+.icon {
+    margin-right: 5px;  
+    color: #fff;
+    font-size: 14px;  
+}
+
+
+.icon-home:before {
+    content: "\2302";
+}
+
+.icon-services:before {
+    content: "\2630";
+}
+
+.icon-about:before {
+    content: "\128100";
+}
+
+.icon-skills:before {
+    content: "\9881";
+}
+
+.icon-blog:before {
+    content: "\270f";
+}
+
+.icon-contacts:before {
+    content: "\2709";
+}
 /* menu btn styling */
 .menu-btn{
     color: #fff;
@@ -210,7 +274,7 @@ section .title::after{
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
-    border-radius: 6px;
+    border-radius: 20px;
     border: 2px solid whitesmoke;
     transition: all 0.3s ease;
 }
@@ -254,7 +318,7 @@ section .title::after{
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 20px;
     border: 2px solid whitesmoke;
     transition: all 0.3s ease;
 }
@@ -340,7 +404,7 @@ section .title::after{
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 20px;
     border: 2px solid whitesmoke;
     transition: all 0.3s ease;
 }
@@ -554,11 +618,11 @@ section .title::after{
   color: #fff;
   display: block;
   width: 160px!important;
-  height: 45px;
+  height: 50px;
   outline: none;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 6px;
+  border-radius: 20px;
   cursor: pointer;
   flex-wrap: nowrap;
   background: #009B4D;
@@ -712,7 +776,7 @@ footer span a:hover{
     }
 }
 
-/*comment: This is the CSS for the social media buttons*/
+/*This is the CSS for the social media buttons*/
 
 * {
     margin: 0;
