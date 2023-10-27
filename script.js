@@ -71,6 +71,17 @@ $(document).ready(function(){
         element.innerHTML =  currentYear;
     }
     addCopyright();
+    
+    //Function to Register the Service Worker for PWA
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then((registration) => {
+            console.log('Service Worker registered:', registration);
+          })
+          .catch((error) => {
+            console.log('Service Worker registration failed:', error);
+          });
+      }
 
     // owl carousel script
     $('.carousel').owlCarousel({
