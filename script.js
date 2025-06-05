@@ -88,7 +88,7 @@ $(document).ready(function(){
         margin: 20,
         loop: true,
         autoplay: true,
-        autoplayTimeOut: 2000,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive: {
             0:{
